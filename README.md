@@ -1,6 +1,11 @@
 SpreeApiExtend
 ==============
 
+Vadim: This gem was updated (actually cleaned almost all) for NDA project internal service API.
+Description below is not valid as for now.
+
+--------------
+
 A couple quick additional methods on the api to better support JS MVC frontends.
 
 - Create users (don't have to be an admin) @ /api/users. Returns api key in response

@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_api_extend'
   s.version     = '2.1.0.beta'
-  s.summary     = 'Spree Extended api methods for Front end JS MVC Frameworks'
-  s.description = 'Spree Extended api methods for Front end JS MVC Frameworks'
+  s.summary     = 'Spree Extended api methods for NDA project'
+  s.description = 'Spree Extended api methods for NDA project'
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Drew Purdy'
