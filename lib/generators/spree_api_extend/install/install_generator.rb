@@ -4,6 +4,10 @@ module SpreeApiExtend
 
       #class_option :auto_run_migrations, :type => :boolean, :default => false
 
+      def add_config
+        append_file 'config/initializers/spree.rb', "Spree::Api::Config[:requires_authentication] = true"
+      end
+
       #def add_javascripts
         #append_file 'app/assets/javascripts/store/all.js', "//= require store/spree_api_extend\n"
         #append_file 'app/assets/javascripts/admin/all.js', "//= require admin/spree_api_extend\n"
