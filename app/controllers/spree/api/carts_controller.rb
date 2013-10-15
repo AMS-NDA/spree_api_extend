@@ -3,7 +3,7 @@ module Spree
     class CartsController < Spree::Api::BaseController
       def index
         if current_api_user
-          @order = Spree::Order.where(user_id: current_api_user.id, :state => 'cart').first
+          @order = Spree::Order.where(user_id: current_api_user.id).where.not(state: 'complete').first
           unless @order
             @order = Order.build_from_api(current_api_user, {})
           end
